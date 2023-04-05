@@ -1,0 +1,244 @@
+.cart-background {
+    background-image: url(img/cart-image.jpg);
+}
+
+.cart-section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+}
+
+.cart-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 14px;
+
+    &-text {
+        font-size: 16px;
+        line-height: 20px;
+        color: $colorBlack;
+    }
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    border-top: 1px solid $colorGreySecondary;
+
+    &-content {
+        display: flex;
+        gap: 32px;
+
+        &-image {
+            display: flex;
+            justify-content: center;
+            width: 173px;
+            height: 173px;
+            overflow: hidden;
+        }
+        
+        &-info {
+            width: 276px;
+        }
+    }
+}
+
+.cart-item-title {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    color: $colorBlack;
+    margin-bottom: 14px;
+}
+
+.cart-item-description {
+    font-size: 14px;
+    line-height: 17px;
+    color: $colorDarkGrey;
+    margin-bottom: 16px;
+}
+
+.cart-item-price {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 500;
+    color: #050505;
+    margin-bottom: 16px;
+}
+
+.cart-item-controls {
+    display: flex;
+    gap: 32px;
+}
+
+.cart-item-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 29px;
+    color: $colorBlack;
+    background: none;
+    border: none;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.cart-item-count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 71px;
+    min-width: 71px;
+    height: 51px;
+    border-radius: 6px;
+    background-color: $colorLightGrey;
+}
+
+.input-number {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 27px;
+    font-weight: 600;
+    text-align: center;
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    &-controls {
+        display: flex;
+        flex-direction: column;
+        margin-right: 14px;
+    }
+}
+
+.input-number-button {
+    width: 16px;
+    height: 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    &:hover path {
+        stroke: $colorBlack;
+    }
+}
+
+.cart-controls {
+    display: flex;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.cart-button {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    width: 200px;
+    height: 37px;
+    color: $colorBlack;
+    background: none;
+    border: 1px solid $colorBlack;
+    border-radius: 50px;
+    box-sizing: border-box;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+        color: $colorWhite;
+        background-color: $colorBlack;
+    }
+}
+
+.order-form {
+    display: flex;
+    flex-direction: column;
+    padding-top: 42px;
+    padding-left: 44px;
+    padding-right: 44px;
+    padding-bottom: 44px;
+    border-radius: 20px;
+    background-color: $colorLightGrey;
+
+    &-title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 36px;
+        color: $colorBlack;
+        text-align: center;
+        margin-bottom: 35px;
+    }
+    
+    &-input {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        line-height: 17px;
+        color: $colorBlack;
+        padding: 4px 0;
+        margin-bottom: 40px;
+        border: none;
+        border-bottom: 1px solid $colorGreySecondary;
+        background: none;
+        outline: none;
+        box-sizing: border-box;
+
+        &::-webkit-input-placeholder {
+            color: $colorBlack;
+        }
+
+        &::-moz-placeholder {
+            color: $colorBlack;
+        }
+
+        &:-ms-input-placeholder {
+            color: $colorBlack;
+        }
+        
+        &:-moz-placeholder {
+            color: $colorBlack;
+        }
+    }
+    
+    &-total {
+        font-size: 24px;
+        line-height: 29px;
+        color: $colorBlack;
+        text-align: center;
+        margin-top: 24px;
+        margin-bottom: 18px;
+
+        & > span {
+            font-weight: 500;
+        }
+    }
+    
+    &-button {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        height: 40px;
+        color: $colorBlack;
+        background: none;
+        border: 1px solid $colorBlack;
+        border-radius: 20px;
+        box-sizing: border-box;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+            color: $colorWhite;
+            background-color: $colorBlack;
+        }
+    }
+}
